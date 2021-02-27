@@ -7,11 +7,21 @@
 
 import UIKit
 
-class SearchView: UIViewController {
+import SnapKit
+import Then
+
+final class SearchView: UIViewController {
+  var presenter: SearchPresenterProtocol?
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    
+    
   }
 }
 
+extension SearchView: SearchViewProtocol {
+  func display() {
+    
+  }
+}

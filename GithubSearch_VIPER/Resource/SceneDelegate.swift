@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     self.window = UIWindow(frame: windowScene.coordinateSpace.bounds)
     self.window?.windowScene = windowScene
-    let viewController = ViewController()
+    let viewController = SearchRouter.createModule()
     let navigationController = UINavigationController(rootViewController: viewController)
     self.window?.rootViewController = navigationController
     self.window?.makeKeyAndVisible()
