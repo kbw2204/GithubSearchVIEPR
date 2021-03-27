@@ -10,15 +10,15 @@ import UIKit
 import RxCocoa
 
 protocol SearchViewProtocol: class {
-  var presenter: SearchPresenterProtocol? { get set }
+  var presenter: SearchPresenterProtocol? { get }
   
   func display() // view를 그림
 }
 
 protocol SearchPresenterProtocol: class {
-  var view: SearchViewProtocol? { get set }
-  var interactor: SearchInteractorProtocol? { get set }
-  var router: SearchRouterProtocol? { get set }
+  var view: SearchViewProtocol? { get }
+  var interactor: SearchInteractorProtocol? { get }
+  var router: SearchRouterProtocol? { get }
   
   func viewDidLoad() // 뷰가 로드될 때, 주로 interactor에서 초기값 가져와서 뷰 업데이트
   func searchRepo() // repo를 검색
@@ -27,7 +27,7 @@ protocol SearchPresenterProtocol: class {
 }
 
 protocol SearchInteractorProtocol {
-  var presenter: SearchPresenterProtocol? { get set }
+  var presenter: SearchPresenterProtocol? { get }
    
   func fetchData() // 초기 데이터 가져오기
   func updateData() // 데이터 업데이트
