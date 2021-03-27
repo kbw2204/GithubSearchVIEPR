@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07563729260F2E4300803140 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07563728260F2E4300803140 /* Repo.swift */; };
+		07563732260F2E7F00803140 /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07563731260F2E7F00803140 /* GithubService.swift */; };
 		076CA5D625EA416100E0ED51 /* SearchProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CA5D525EA416100E0ED51 /* SearchProtocols.swift */; };
 		076CA5DB25EA416E00E0ED51 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CA5DA25EA416E00E0ED51 /* SearchPresenter.swift */; };
 		076CA5E325EA417800E0ED51 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CA5E225EA417800E0ED51 /* SearchInteractor.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07563728260F2E4300803140 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		07563731260F2E7F00803140 /* GithubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubService.swift; sourceTree = "<group>"; };
 		076CA5D525EA416100E0ED51 /* SearchProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProtocols.swift; sourceTree = "<group>"; };
 		076CA5DA25EA416E00E0ED51 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		076CA5E225EA417800E0ED51 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
@@ -102,6 +106,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07563727260F2E2E00803140 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07563728260F2E4300803140 /* Repo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07563730260F2E6700803140 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				07563731260F2E7F00803140 /* GithubService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		076CA5EC25EA419300E0ED51 /* SearchView */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +157,8 @@
 		0796C4FD25EA242500F7EBCB /* GithubSearch_VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				07563730260F2E6700803140 /* Service */,
+				07563727260F2E2E00803140 /* Model */,
 				0796C56B25EA2D4400F7EBCB /* VIPER */,
 				0796C56725EA2C8200F7EBCB /* Resource */,
 			);
@@ -334,7 +356,9 @@
 				076CA5E325EA417800E0ED51 /* SearchInteractor.swift in Sources */,
 				0796C50325EA242500F7EBCB /* SearchView.swift in Sources */,
 				0796C4FF25EA242500F7EBCB /* AppDelegate.swift in Sources */,
+				07563729260F2E4300803140 /* Repo.swift in Sources */,
 				076CA5E825EA418600E0ED51 /* SearchRouter.swift in Sources */,
+				07563732260F2E7F00803140 /* GithubService.swift in Sources */,
 				076CA5DB25EA416E00E0ED51 /* SearchPresenter.swift in Sources */,
 				0796C50125EA242500F7EBCB /* SceneDelegate.swift in Sources */,
 				076CA5D625EA416100E0ED51 /* SearchProtocols.swift in Sources */,
